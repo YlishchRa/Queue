@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="History.cpp" />
     <ClCompile Include="Printer.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="QueuePr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
+    <ClInclude Include="History.h" />
     <ClInclude Include="Printer.h" />
     <ClInclude Include="Queue.h" />
   </ItemGroup>

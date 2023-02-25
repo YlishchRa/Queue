@@ -16,17 +16,18 @@ int main()
 	Printer printer(10);
 	Client clients[5];
 
-	CreateClient("Yura", 1, 3, clients, printer);
-	CreateClient("Olga", 3, 5, clients, printer);
+	CreateClient("Yura", 1, 1, clients, printer);
+	CreateClient("Olga", 3, 1, clients, printer);
 	CreateClient("Sasha", 4, 1, clients, printer);
-	CreateClient("Nastya", 4, 7, clients, printer);
-	CreateClient("Tetyana", 3, 4, clients, printer);
+	CreateClient("Nastya", 4, 1, clients, printer);
+	CreateClient("Tetyana", 3, 1, clients, printer);
 	
 
 
-	printer.Printing(clients);
+	printer.Printing();
 
-	clients[0].ShowStatus();
+	
+	printer.ShowHistory();
 
 	return 0;
 }

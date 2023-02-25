@@ -27,7 +27,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& output, Client c)
 	{
 
-		output << c.name;
+		output << "Name: "<< c.name  <<  " |Page: " << c.countPage << " |Time: " << c.time;
 		return output;
 	}
 };

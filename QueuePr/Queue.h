@@ -1,9 +1,11 @@
 #pragma once
 #include "Client.h"
+#include"History.h"
 #include <iostream>
 class Queue
 {
     Client* clients = new Client[500];
+    
     int priority[500];
     int lengthQueue;
     int MAXQueue;
@@ -49,11 +51,10 @@ public:
             priority[i] = priority[i + 1];
             clients[i] = clients[i + 1];
         }
-
         lengthQueue--;
         return tmpClient;
     }
-    Client getFistInQueue() { return clients[0]; }
+    Client& getFistInQueue() { return clients[0]; }
     friend std::ostream& operator<<(std::ostream& output, Queue& q)
     {
 
@@ -63,4 +64,5 @@ public:
         }
         return output;
     }
+   
 };
